@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Timeline from './components/Timeline';
 import ProjectCard from './components/ProjectCard';
@@ -40,7 +40,7 @@ function App() {
       <Navbar />
       
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center pt-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/public/background.jpg')` }}>
+      <section id="home" className="min-h-screen flex items-center justify-center pt-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url('/background.jpg')` }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -96,6 +96,10 @@ function App() {
             >
               <Mail size={24} />
             </a>
+            <span className="flex items-center text-gray-300 hover:text-white transition-colors">
+              <Phone size={24} />
+              <span className="ml-2">+212 619 159 531</span>
+            </span>
           </div>
         </motion.div>
       </section>
@@ -109,7 +113,9 @@ function App() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold mb-16 bg-gradient-to-r from-[#2563EB] to-[#9333EA] bg-clip-text text-transparent">About Me</h2>
+            <h2 className="text-4xl font-bold mb-16 bg-gradient-to-r from-[#2563EB] to-[#9333EA] bg-clip-text text-transparent brightness-110">
+              About Me
+            </h2>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -125,7 +131,7 @@ function App() {
                 rotate: [0, 5, -5, 0],
               }}
               transition={{ duration: 0.8 }}
-              src="./public/yahya.jpg"
+              src="./yahya.jpg"
               alt="Yahya Oubedda"
               className="w-[200px] h-auto rounded-full object-cover transform"
             />
@@ -237,12 +243,9 @@ function App() {
               >
                 Email Me
               </a>
-              <a
-                href="tel:+212619159531"
-                className="bg-gradient-to-r from-[#2563EB] to-[#9333EA] text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity"
-              >
-                Call Me
-              </a>
+              <span className="bg-gradient-to-r from-[#2563EB] to-[#9333EA] text-white px-6 py-3 rounded-lg">
+                Call me : +212 619 159 531
+              </span>
               <a
                 href="https://linkedin.com/in/oubedda-yahya-2a6872285"
                 target="_blank"
