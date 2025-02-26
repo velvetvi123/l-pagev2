@@ -17,7 +17,7 @@ function App() {
       title: 'DentiaPro',
       description: 'As the co-founder of DentiaPro CRM, I spearheaded the development of an innovative, high-performance solution designed specifically for dental clinics. By optimizing backend architecture and implementing advanced DevOps practices, I ensured a secure, scalable, and efficient platform that streamlines operations and enhances patient management. DentiaPro enables dental professionals to focus on delivering exceptional care while our technology seamlessly manages the rest. Discover how DentiaPro is transforming dental clinic management with cutting-edge technology.',
       technologies: ['React', 'PostgreSQL', 'Django Rest Framework'],
-      githubLink: 'github.com',
+      githubLink: 'https://github.com/velvetvi123',
       demoLink: 'https://dentia-pro-landing.vercel.app/'
     },
     {
@@ -61,15 +61,15 @@ function App() {
             transition={{ duration: 0.8 }}
             className="text-2xl md:text-3xl mb-8 text-gray-300"
           >
-            <span className="block text-shadow-md">
+            <span className="block text-shadow-md text-[#C9D1D9]">
               Hi, I’m <span className="font-bold">Yahya Oubedda</span>.
             </span>
-            <span className="block text-shadow-md">
+            <span className="block text-shadow-md text-[#C9D1D9]">
               I’m a <span className="font-bold">Full Stack Software Engineer</span> passionate about
               <br className="hidden md:block" />
               crafting innovative solutions and driving technological impact.
             </span>
-            <span className="block text-shadow-md">
+            <span className="block text-shadow-md text-[#C9D1D9]">
               Let’s <span className="font-bold">build the future</span> together.
             </span>
           </motion.h2>
